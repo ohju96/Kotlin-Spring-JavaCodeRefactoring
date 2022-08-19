@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.6.8'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21' // Kotlin 사용을 위한 추가
 }
 
 group = 'com.group'
@@ -15,6 +16,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8" //Kotlin 스탠다드 라이브러리 사용
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
@@ -22,3 +24,14 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+// Kotlin 사용을 위한 추가, Java 11 버전을 사용하므로 맞춰준다.
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "11"
+    } }
