@@ -87,6 +87,7 @@ class BookServiceTest @Autowired constructor(
     fun returnBookTest() {
         //given
         val savedUser = userRepository.save(User("오주현", 27))
+
         //실패를 위해 대출 중으로 만들어 준다.
         userLoanHistoryRepository.save(UserLoanHistory(savedUser, "이상한 나라의 엘리스", false))
         val request = BookReturnRequest("오주현", "이상한 나라의 엘리스")
