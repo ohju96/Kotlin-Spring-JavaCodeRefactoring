@@ -4,6 +4,7 @@ plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.6.21' // Kotlin 사용을 위한 추가
     id 'org.jetbrains.kotlin.plugin.jpa' version '1.6.21'
+    id "org.jetbrains.kotlin.plugin.allopen" version "1.6.21"
 }
 
 group = 'com.group'
@@ -12,6 +13,12 @@ sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
+}
+
+allOpen {
+    annotation("javax.persistence.Entity")
+    annotation("javax.persistence.MappedSuperclass")
+    annotation("javax.persistence.Embeddable")
 }
 
 dependencies {
