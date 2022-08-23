@@ -4,6 +4,7 @@ plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.6.21' // Kotlin 사용을 위한 추가
     id 'org.jetbrains.kotlin.plugin.jpa' version '1.6.21'
+    id 'org.jetbrains.kotlin.plugin.spring' version '1.6.21' //스프링 빈 클래스를 자동으로 열어줘 open을 클래스와 메서드에 안 붙여도 된다.
     id "org.jetbrains.kotlin.plugin.allopen" version "1.6.21"
 }
 
