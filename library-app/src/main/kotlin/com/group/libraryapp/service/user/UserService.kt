@@ -5,6 +5,9 @@ import com.group.libraryapp.domain.user.UserRepository
 import com.group.libraryapp.dto.user.request.UserCreateRequest
 import com.group.libraryapp.dto.user.request.UserUpdateRequest
 import com.group.libraryapp.dto.user.response.UserResponse
+import com.group.libraryapp.util.fail
+import com.group.libraryapp.util.findByIdOrThrow
+import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
@@ -30,13 +33,14 @@ class UserService(
 
     @Transactional
     fun updateUserName(request: UserUpdateRequest) {
-        val user = userRepository.findById(request.id).orElseThrow(::IllegalArgumentException)
+        val user = userRepository.findByIdOrThrow(request.id) //확장 함수를 통해 코드를 간결하게 만들어 준다.
         user.updateName(request.name)
     }
 
     @Transactional
     fun deleteUser(name: String) {
-        val user = userRepository.findByName(name).orElseThrow(::IllegalArgumentException)
+//        val user = userRepository.findByName(name) ?: throw IllegalArgumentException() //옵셔널을 사용한 것 처럼 사용
+        val user = userRepository.findByName(name) ?: fail() //코틀린 파일에 예외처리 메서드를 추가해 처리한다.
         userRepository.delete(user)
     }
 }
