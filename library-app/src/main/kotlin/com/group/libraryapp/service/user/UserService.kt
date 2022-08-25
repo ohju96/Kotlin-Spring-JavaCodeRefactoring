@@ -28,7 +28,7 @@ class UserService(
                 // 여러 방법으로 활용할 수 있다.
 //                .map { user -> UserResponse(user) }
 //                .map { ::UserResponse }
-                .map { UserResponse(it) }
+                .map { UserResponse.of(it) }
     }
 
     @Transactional
