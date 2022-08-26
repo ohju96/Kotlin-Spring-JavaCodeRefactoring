@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.725s</div>
+<div class="counter">0.762s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,25 +81,25 @@
 <tr>
 <td class="success">책이 진작 대출되어 있다면, 신규 대출이 실패한다.</td>
 <td class="success">loanBookFailTest()</td>
-<td class="success">0.052s</td>
+<td class="success">0.059s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">책 대출이 정상 동작한다.</td>
 <td class="success">loanBookTest()</td>
-<td class="success">0.618s</td>
+<td class="success">0.649s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">책 반납이 정상 동작한다.</td>
 <td class="success">returnBookTest()</td>
-<td class="success">0.023s</td>
+<td class="success">0.033s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">책 등록이 정상 동작한다.</td>
 <td class="success">saveBookTest()</td>
-<td class="success">0.032s</td>
+<td class="success">0.021s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,12 +107,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2022-08-25 22:41:10.499  INFO 2128 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group.libraryapp.service.book.BookServiceTest], using SpringBootContextLoader
-2022-08-25 22:41:10.500  INFO 2128 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group.libraryapp.service.book.BookServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-08-25 22:41:10.500  INFO 2128 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.group.libraryapp.service.book.BookServiceTest]: BookServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-08-25 22:41:10.530  INFO 2128 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.group.libraryapp.LibraryAppApplication for test class com.group.libraryapp.service.book.BookServiceTest
-2022-08-25 22:41:10.536  INFO 2128 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2022-08-25 22:41:10.538  INFO 2128 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25d5327, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@188500e9, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7c1e5d14, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2fb3c930, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@479f738a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@772db1d8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7955b4d4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@489e1887, org.springframework.test.context.event.EventPublishingTestExecutionListener@7421213d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e98fd10, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3a3f1703, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25d6ae3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7f088b5c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@56d189d0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14941b06]
+<pre>2022-08-26 19:29:56.808  INFO 25279 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.group.libraryapp.service.book.BookServiceTest], using SpringBootContextLoader
+2022-08-26 19:29:56.809  INFO 25279 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.group.libraryapp.service.book.BookServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-08-26 19:29:56.809  INFO 25279 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.group.libraryapp.service.book.BookServiceTest]: BookServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-08-26 19:29:56.850  INFO 25279 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.group.libraryapp.LibraryAppApplication for test class com.group.libraryapp.service.book.BookServiceTest
+2022-08-26 19:29:56.857  INFO 25279 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-08-26 19:29:56.859  INFO 25279 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14941b06, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d776105, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@461e479c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cdbc986, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2823bd30, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e1a8e78, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5a0c0680, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@18d963be, org.springframework.test.context.event.EventPublishingTestExecutionListener@2d2697a8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@17f5b53a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2df79942, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7ee0dbd1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@67629872, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5d04adc1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4c2812aa]
 Hibernate: 
     insert 
     into
@@ -455,7 +455,7 @@ Hibernate:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.1</a> at 2022. 8. 25. 오후 10:41:11</p>
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 2022. 8. 26. 오후 7:29:58</p>
 </div>
 </div>
 </body>

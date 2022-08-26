@@ -26,7 +26,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8" //Kotlin 스탠다드 라이브러리 사용
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.21")
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.6.21"
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3" //jackson kotlin
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
