@@ -23,6 +23,7 @@ class UserServiceTest @Autowired constructor(
     // 공유 자원인 데이터베이스를 지워줘야 한다. 코드마다 넣으면 반복이 발생하므로 어노테이션을 활용한다.
     @AfterEach
     fun clean() {
+        println("CLEAN 시작")
         userRepository.deleteAll()
     }
 
