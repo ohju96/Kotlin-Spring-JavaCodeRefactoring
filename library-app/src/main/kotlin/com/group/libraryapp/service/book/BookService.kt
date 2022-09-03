@@ -48,14 +48,17 @@ class BookService(
 
     @Transactional(readOnly = true)
     fun countLoandBook(): Int {
-        return userLoanHistoryRepository.findAllByStatus(UserLoanStatus.LOANED).size
+        return userLoanHistoryRepository.countByStatus(UserLoanStatus.LOANED).toInt()
     }
 
     @Transactional(readOnly = true)
     fun getBookStatistics(): List<BookStatResponse> {
-        return bookRepository.findAll() // List<Book>
+        return bookRepository.getStats()
+
+                /*.findAll() // List<Book>
                 .groupBy { book -> book.type } // Map<BooType, List<Book>>
                 .map { (type, books) -> BookStatResponse(type, books.size) } // List<BookStatResponse
+*/
 
 /*        val results = mutableListOf<BookStatResponse>() //mutableListOf = 가변 리스트
         val books = bookRepository.findAll()
