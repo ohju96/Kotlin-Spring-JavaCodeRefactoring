@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">19</div>
+<div class="counter">21</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">15</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.989s</div>
+<div class="counter">0.208s</div>
 <p>duration</p>
 </div>
 </td>
@@ -48,7 +48,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">94%</div>
+<div class="percent">28%</div>
 <p>successful</p>
 </div>
 </td>
@@ -71,8 +71,64 @@
 <h2>Failed tests</h2>
 <ul class="linkList">
 <li>
+<a href="classes/com.group.libraryapp.LibraryAppApplicationTests.html">LibraryAppApplicationTests</a>.
+<a href="classes/com.group.libraryapp.LibraryAppApplicationTests.html#contextLoads()">contextLoads()</a>
+</li>
+<li>
 <a href="classes/com.group.libraryapp.calculator.JunitCalculatorTest.html">JunitCalculatorTest</a>.
 <a href="classes/com.group.libraryapp.calculator.JunitCalculatorTest.html#divideTest()">divideTest()</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html">BookServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html#countLoanedBookTest()">책 대여 권수를 정상 확인한다</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html">BookServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html#getBookStatisticsTest()">분야별 책 권수를 정상 확인한다</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html">BookServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html#loanBookFailTest()">책이 진작 대출되어 있다면, 신규 대출이 실패한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html">BookServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html#loanBookTest()">책 대출이 정상 동작한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html">BookServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html#returnBookTest()">책 반납이 정상 동작한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html">BookServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.book.BookServiceTest.html#saveBookTest()">책 등록이 정상 동작한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">UserServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html#deleteUserNameTest()">유저 삭제가 정상 동작한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">UserServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html#getUserLoanHistoriesTest1()">대출 기록이 없는 유저도 응답에 포함된다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">UserServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html#getUserLoanHistoriesTest2()">대출 기록이 많은 유저의 응답이 정상 동작한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">UserServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html#getUserLoanHistoriesTest3()">방금 두 경우가 합쳐진 테스트</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">UserServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html#getUsersTest()">유저 업데이트가 정상 동작한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">UserServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html#saveUserTest()">유저 저장이 정상 동작한다.</a>
+</li>
+<li>
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">UserServiceTest</a>.
+<a href="classes/com.group.libraryapp.service.user.UserServiceTest.html#updateUserNameTest()">유저 조회가 정상 동작한다.</a>
 </li>
 </ul>
 </div>
@@ -91,14 +147,14 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/com.group.libraryapp.html">com.group.libraryapp</a>
 </td>
 <td>3</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0.148s</td>
-<td class="success">100%</td>
+<td>0.028s</td>
+<td class="failures">66%</td>
 </tr>
 <tr>
 <td class="failures">
@@ -107,28 +163,28 @@
 <td>5</td>
 <td>1</td>
 <td>0</td>
-<td>0.145s</td>
+<td>0.168s</td>
 <td class="failures">80%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/com.group.libraryapp.service.book.html">com.group.libraryapp.service.book</a>
 </td>
-<td>4</td>
+<td>6</td>
+<td>6</td>
 <td>0</td>
-<td>0</td>
-<td>0.539s</td>
-<td class="success">100%</td>
+<td>0.011s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/com.group.libraryapp.service.user.html">com.group.libraryapp.service.user</a>
 </td>
 <td>7</td>
+<td>7</td>
 <td>0</td>
-<td>0</td>
-<td>0.157s</td>
-<td class="success">100%</td>
+<td>0.001s</td>
+<td class="failures">0%</td>
 </tr>
 </tbody>
 </table>
@@ -154,18 +210,18 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.005s</td>
+<td>0.028s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/com.group.libraryapp.LibraryAppApplicationTests.html">com.group.libraryapp.LibraryAppApplicationTests</a>
 </td>
 <td>1</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0.143s</td>
-<td class="success">100%</td>
+<td>0s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
 <td class="failures">
@@ -174,28 +230,28 @@
 <td>5</td>
 <td>1</td>
 <td>0</td>
-<td>0.145s</td>
+<td>0.168s</td>
 <td class="failures">80%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/com.group.libraryapp.service.book.BookServiceTest.html">com.group.libraryapp.service.book.BookServiceTest</a>
 </td>
-<td>4</td>
+<td>6</td>
+<td>6</td>
 <td>0</td>
-<td>0</td>
-<td>0.539s</td>
-<td class="success">100%</td>
+<td>0.011s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/com.group.libraryapp.service.user.UserServiceTest.html">com.group.libraryapp.service.user.UserServiceTest</a>
 </td>
 <td>7</td>
+<td>7</td>
 <td>0</td>
-<td>0</td>
-<td>0.157s</td>
-<td class="success">100%</td>
+<td>0.001s</td>
+<td class="failures">0%</td>
 </tr>
 </tbody>
 </table>
@@ -208,7 +264,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.1</a> at 2022. 9. 3. 오후 3:16:21</p>
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 2022. 9. 4. 오후 6:02:28</p>
 </div>
 </div>
 </body>
