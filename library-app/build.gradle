@@ -6,6 +6,7 @@ plugins {
     id 'org.jetbrains.kotlin.plugin.jpa' version '1.6.21'
     id 'org.jetbrains.kotlin.plugin.spring' version '1.6.21' //스프링 빈 클래스를 자동으로 열어줘 open을 클래스와 메서드에 안 붙여도 된다.
     id "org.jetbrains.kotlin.plugin.allopen" version "1.6.21"
+    id "org.jetbrains.kotlin.kapt" version '1.6.21'
 }
 
 group = 'com.group'
@@ -28,6 +29,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8" //Kotlin 스탠다드 라이브러리 사용
     implementation "org.jetbrains.kotlin:kotlin-reflect:1.6.21"
     implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3" //jackson kotlin
+    implementation "org.junit.jupiter:junit-jupiter:5.8.1"
+    implementation "com.querydsl:querydsl-jpa:5.0.0"
+    kapt("com.querydsl:querydsl-apt:5.0.0:jpa")
+    kapt("org.springframework.boot:spring-boot-configuration-processor")
+
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
